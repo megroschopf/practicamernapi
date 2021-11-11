@@ -1,0 +1,28 @@
+@api = http://localhost:4000
+
+### Find all videos
+GET {{api}}/videos
+
+### Find a video
+GET {{api}}/videos/6189e3a35a44354fc1e521cd
+
+### Create
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url":"https://www.youtube.com/watch?v=FzWG8jiw4XM",
+    "title":"netflix mern",
+    "description":"tutorial para hacer netflix mern"
+}
+###
+PUT {{api}}/videos/6189e3a35a44354fc1e521cd
+Content-Type: application/json
+
+{
+    "title": "backend mern",
+    "description": "parte 1 curso mern de Fazt",
+    "url": "https://www.youtube.com/watch?v=_RZ-T6TxP7w&t=2612s"
+}
+###
+DELETE {{api}}/videos/6189e6f17a9cc32d6e543e1b
